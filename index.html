@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        
+      }
+    body{
+        background-color: aliceblue;
+    }
+   .box{
+        width: 298px;
+        height: 460px;
+        background: rgb(255, 255, 255);
+        margin: 100px auto;
+       } 
+    .box img{
+        width: 100%;
+    }
+    .review{
+        height: 40px;
+        font-size: 14px;
+        padding: 0 28px;
+        margin-top: 12px;
+    }
+    .appraise{
+       font-size: 12px;
+       color: rgb(206, 206, 206);
+       margin-top: 4px;
+       padding: 0 28px;
+    }
+    .info{
+        font-size: 14px;
+        margin-top: 12px;  
+        padding: 0 28px;
+    }
+    .info h4{
+        /* 块元素转换成为行内元素的时候，注意语法是class定义名+标签名 */
+        display: inline-block;
+        /* h1~h4中去掉粗细 */
+        font-weight: 400;
+    }
+    .info span{
+        color: rgb(255, 28, 28);
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="img/tu.png">
+        <p class="review">
+            设计师怎么去更好的学习前端知识，如html和css </p>
+        <div class="appraise">主讲人：哈哈同学 来自地球的每个地方</div>
+        <div>
+            <div class="info">
+                <h4>你的每一次的三的鼓励...|</h4>
+                <span>90.99元</span>
+                
+            </div> 
+        </div>
+    </div>
+</body>
+</html> 
