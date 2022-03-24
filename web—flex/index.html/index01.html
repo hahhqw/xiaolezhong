@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  /* .focus img{
+    background-image: center;
+  } */
+  *{
+      /* border:1px solid red; */
+      margin: 0%;
+      padding: 0%;
+  }
+div{
+    box-sizing: border-box;
+}
+  a{
+      text-decoration: none;
+  }
+.search-index{
+    display: flex;
+    /* 固定布局margin不起作用 */
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 100%; 
+    max-width: 540px;
+    min-width: 320px;
+    height: 44px;
+    background-color: rgb(243, 243, 243);
+}
+.search{
+    position: relative;
+    height: 30px;
+    flex: 1;
+    border: 1px solid rgb(83, 64, 250);
+    margin: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    padding-left: 25px;
+    line-height: 28px;  
+}
+.search::before{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    height: 16px;
+    width: 16px;
+    background: url(../imges/search.png);
+}
+.user{
+    width: 44px;
+    height: 44px;
+    /* background-color: rgb(255, 255, 255); */
+    font-size: 12px;
+    text-align: center;
+    color: rgb(37, 37, 255);
+}
+.user::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../imges/unsplash_dt60oksDTx8.png);
+    margin: 5px auto 0;
+}
+.focus{
+    position: fixed;
+    top: 54px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 100%; 
+    max-width: 540px;
+    min-width: 320px;
+}
+ .focus img{
+     width: 540px;
+     height: 64px;
+ }
+ .la-nav{
+    display: flex;
+    position: fixed;
+    top: 130px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 100%; 
+    max-width: 540px;
+    min-width: 320px;
+    background-color: rgb(236, 255, 255);
+    height: 67px;
+    border-radius: 6px;
+ }
+li{
+    list-style: none;
+}
+ .la-nav li{
+     flex: 1;
+ }
+
+ .la-nav a{
+     display: flex;
+     flex-direction: column;
+     font-size: 13px;
+     align-items: center;
+
+}
+.la-nav-icon{
+    width: 32px;
+    height: 32px;
+    background-color: blue;
+    margin: 8px;
+}
+.four{
+    display: flex;
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    transform:translateX(-50%);
+    width: 100%; 
+    max-width: 540px;
+    min-width: 320px;
+    background-color: rgb(236, 245, 255);
+    height: 67px;
+    border-radius: 6px;
+}
+.four div{
+    flex: 1;
+}
+.four div{
+     display: flex;
+     flex-direction: column;
+     font-size: 14px;
+     align-items: center;
+    }
+</style>
+<body >
+    <div class="search-index">
+        <div class="search">搜索：目的/酒店/景点/航班号</div>
+        <a href="#" class="user">我的</a>
+    </div>
+    <div class="focus">
+        <img src="../imges/Frame 48.png" alt="">
+    </div>
+    <div class="la-nav">
+        <li>
+            <a href="#">
+                <span class="la-nav-icon"></span>
+                <span>景点 玩乐</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="la-nav-icon"></span>
+                <span>休闲 干饭</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="la-nav-icon"></span>
+                <span>旅游 爬山</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="la-nav-icon"></span>
+                <span>游戏 好玩</span>
+            </a>
+        </li>
+        <li> 
+            <a href="#">
+                <span class="la-nav-icon"></span>
+                <span>人生 玩乐</span>
+            </a>
+        </li>
+        <nav class="four">
+            <div class="nav-common">1</div>
+            <div class="nav-common">1</div>
+            <div class="nav-common">1</div>
+        </nav>
+
+    </div>
+
+</body>
+</html>
+
